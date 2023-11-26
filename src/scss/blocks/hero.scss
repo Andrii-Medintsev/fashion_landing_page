@@ -1,0 +1,36 @@
+.hero {
+  height: 735px;
+  background-image: url('../../img/hero_icon.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 120px;
+
+  &__content {
+    position: absolute;
+    right: 0;
+    bottom: 100px;
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    margin-bottom: 27px;
+
+    &--top {
+      text-transform: uppercase;
+    }
+  }
+
+  &__title {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 100px;
+    text-transform: uppercase;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 34px;
+  }
+}
