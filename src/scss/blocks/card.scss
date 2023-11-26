@@ -1,0 +1,39 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+
+  &__image {
+    margin-bottom: 38px;
+  }
+
+  &__content {
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__brand {
+    font-weight: 300;
+
+  }
+
+  &__title {
+    font-weight: 600;
+
+  }
+
+  &__prices {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__old-price {
+    text-decoration: line-through;
+  }
+
+  &__discount-price {
+    color: $red;
+  }
+}
