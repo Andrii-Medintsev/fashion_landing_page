@@ -5,10 +5,21 @@
   background-size: cover;
   margin-bottom: 120px;
 
+  &-bottom {
+    background-image: url('../../img/hero_bottom_icon.jpg');
+    margin-bottom: 0;
+  }
+
   &__content {
     position: absolute;
     right: 0;
     bottom: 100px;
+  }
+
+  &__content--bottom {
+    position: absolute;
+    left: 0;
+    bottom: 130px;
   }
 
   &__text {
@@ -32,5 +43,9 @@
   &__buttons {
     display: flex;
     gap: 34px;
+  }
+
+  &__button--bottom {
+    width: 214px;
   }
 }
