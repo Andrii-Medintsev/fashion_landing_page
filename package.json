@@ -1,6 +1,6 @@
 {
-  "homepage": "https://SamAndy90.github.io/",
-  "name": "gulp--2022",
+  "homepage": "",
+  "name": "fashion_page",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -14,7 +14,7 @@
     "ftp": "gulp deployFTP --build",
     "svgSprive": "gulp svgSprive"
   },
-  "author": "Andrii Stadnyk",
+  "author": "Andrii Medintsev",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "latest",
