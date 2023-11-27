@@ -1,0 +1,44 @@
+.footer {
+  background-color: $lightblue;
+
+  &__content {
+    padding: 115px 0 106px;
+    display: flex;
+    gap: 196px;
+  }
+
+  &__navigation {
+    width: 532px;
+  }
+
+  &__navigations {
+    display: flex;
+    gap: 88px;
+  }
+
+  &__bottom {
+    padding: 35px 0;
+    background-color: $blue;
+    text-align: center;
+  }
+
+  & .navigation {
+    &__title {
+      margin-bottom: 27px;
+      font-size: 20px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    &__list {
+      flex-direction: column;
+      gap: 21px;
+    }
+
+    &__item {
+      font-size: 15px;
+      font-weight: 400;
+      text-transform: unset;
+    }
+  }
+}

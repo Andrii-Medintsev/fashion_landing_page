@@ -1,0 +1,97 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  max-width: 406px;
+  font-weight: 400;
+
+  &__logo {
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+  }
+
+  &__text {
+    margin-bottom: 40px;
+  }
+
+  &__address {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 26px;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 15px;
+      height: 15px;
+      background-image: url('../../img/location.svg');
+      background-size: cover;
+    }
+  }
+
+  &__email {
+    margin-bottom: 7px;
+    width: max-content;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: $black;
+    }
+  }
+
+  &__phone {
+    margin-bottom: 16px;
+  }
+
+  &__address,
+  &__email,
+  &__phone {
+    transform-origin: left;
+    transition: all 300ms;
+  }
+
+  &__address:hover,
+  &__email:hover,
+  &__phone:hover {
+    transform: scale(1.05);
+  }
+
+}
+
+.socials {
+  display: flex;
+  gap: 20px;
+
+  &__social {
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-size: contain;
+    transition: all 300ms;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &--fb {
+      background-image: url('../../img/facebook.svg');
+    }
+
+    &--inst {
+      background-image: url('../../img/instagram.svg');
+    }
+
+    &--twitter {
+      background-image: url('../../img/twitter.svg');
+    }
+
+    &--linkedin {
+      background-image: url('../../img/linkedIn.svg');
+    }
+  }
+}
