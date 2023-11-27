@@ -22,6 +22,11 @@
     width: 18px;
     height: 18px;
     background-size: contain;
+    transition: all 300ms;
+
+    &:hover {
+      transform: scale(1.2);
+    }
 
     &--search {
       background-image: url('../../img/search.svg');
