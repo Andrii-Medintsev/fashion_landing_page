@@ -1,8 +1,7 @@
-// Получаєм імя проекту
 import * as nodePath from 'path';
 const rootFolder = nodePath.basename(nodePath.resolve());
 
-const buildFolder = `./dist`; // Також можна використовувати rootFolder
+const buildFolder = `./dist`;
 const srcFolder = `./src`;
 
 export const path = {
@@ -21,13 +20,13 @@ export const path = {
         audio: `${srcFolder}/audio/**/*.{mp3,wav}`,
         svg: `${srcFolder}/img/**/*.svg`,
         scss: `${srcFolder}/scss/style.scss`,
-        html: `${srcFolder}/*.html`,  // pug
+        html: `${srcFolder}/templates/**/*.html`,
         svgicons: `${srcFolder}/svgicons/*.svg`,
     },
     watch: {
         js: `${srcFolder}/js/**/*.js`,
         scss: `${srcFolder}/scss/**/*.scss`,
-        html: `${srcFolder}/**/*.html`,  // pug
+        html: `${srcFolder}/templates/**/*.html`,
         images: `${srcFolder}/img/**/*.{jpg,jpeg,png,svg,gif,ico,webp}`,
         audio: `${srcFolder}/audio/**/*.{mp3,wav}`,
     },

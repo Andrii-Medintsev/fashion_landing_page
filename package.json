@@ -29,6 +29,7 @@
     "gulp-imagemin": "latest",
     "gulp-newer": "latest",
     "gulp-notify": "latest",
+    "gulp-nunjucks-render": "^2.2.3",
     "gulp-plumber": "latest",
     "gulp-pug": "latest",
     "gulp-rename": "latest",

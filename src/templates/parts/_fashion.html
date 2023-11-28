@@ -1,0 +1,31 @@
+<section class="page__section fashion">
+  <div class="container">
+    <div class="fashion__content">
+      <h3 class="fashion__title">
+        {{ title }}
+      </h3>
+
+      <span class="fashion__text">
+        Shop our new arrivals from established brands
+      </span>
+
+      <div class="fashion__cards">
+        {% for item in items %}
+          <div class="fashion__card card">
+            <img src={{item.img}} alt="woman picture" class="card__image">
+            <div class="card__content">
+              <span class="card__brand">{{ item.brand }}</span>
+              <h4 class="card__title">
+                {{ item.title }}
+              </h4>
+              <div class="card__prices">
+                <span class="card__old-price">{{ item.oldPrice }}</span>
+                <span class="card__discount-price">{{ item.newPrice }}</span>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

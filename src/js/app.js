@@ -1,4 +1,3 @@
-// ========  Webp  ========================================================
 import * as saFunctions from './modules/functions.js';
 saFunctions.isWebp();
 

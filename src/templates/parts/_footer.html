@@ -1,0 +1,65 @@
+<footer class="footer">
+  <div class="container">
+    <div class="footer__content">
+      <section class="footer__contacts contacts">
+        <h2 class="contacts__logo">Your logo</h2>
+        <span class="contacts__text">We earned a reputation of being good at what we do.
+          Let us take your online shop to new dimension in
+          success!</span>
+        <a
+          href="https://maps.app.goo.gl/tR6gtETtcxAT168p7"
+          class="contacts__address"
+          target="_blank"
+        >
+          Comilla, Bangladesh 3500
+        </a>
+
+        <a
+          href="mailto:kawsarahmed0210@gmail.com"
+          class="contacts__email"
+        >
+          kawsarahmed0210@gmail.com
+        </a>
+
+        <a
+          href="tel:+101647470457"
+          class="contacts__phone"
+        >
+          01647470457
+        </a>
+
+        <div class="contacts__socials socials">
+          <a href="#" class="socials__social socials__social--fb"></a>
+          <a href="#" class="socials__social socials__social--inst"></a>
+          <a href="#" class="socials__social socials__social--twitter"></a>
+          <a href="#" class="socials__social socials__social--linkedin"></a>
+        </div>
+      </section>
+
+      <section class="footer__navigation">
+        <form class="footer__form subscribe">
+          <h2 class="subscribe__title">Recieve email updates</h2>
+          <div class="subscribe__content">
+            <input
+              type="email"
+              name="email"
+              class="subscribe__input"
+              placeholder="Your Email Address"
+            >
+            <button type="submit" class="subscribe__button">Join</button>
+          </div>
+        </form>
+
+        <div class="footer__navigations">
+          {% include 'parts/_shop_nav.html' %}
+          {% include 'parts/_help_nav.html' %}
+          {% include 'parts/_about_nav.html' %}
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    Copyright © 2020 . Your company name  All rights reserved
+  </div>
+</footer>

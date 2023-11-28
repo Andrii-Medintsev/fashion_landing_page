@@ -1,0 +1,25 @@
+{%
+    set navigationLinks = ['Home', 'Shop', 'Lookbook', 'Features', 'Pages', 'Blog']
+%}
+<header class="header">
+    <div class="container">
+        <div class="header__content">
+            <a href="#" class="header__logo logo">Your logo</a>
+            <nav class="header__navigation navigation">
+                <ul class="navigation__list">
+                    {% for link in navigationLinks %}
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">{{link}}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </nav>
+
+            <div class="header__icons">
+                <a href="#" class="header__icon header__icon--search"></a>
+                <a href="#" class="header__icon header__icon--like"></a>
+                <a href="#" class="header__icon header__icon--cart"></a>
+            </div>
+        </div>
+    </div>
+</header>

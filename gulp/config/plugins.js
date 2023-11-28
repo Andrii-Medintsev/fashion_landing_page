@@ -5,8 +5,6 @@ import browsersync from "browser-sync"; // Локальний сервер
 import newer from "gulp-newer"; // Перевірка оновлень
 import ifPlugin from "gulp-if"; // Умовне розгалуження
 
-
-// Експортуєм об'єкт
 export const plugins = {
     replace: replace,
     plumber: plumber,
